@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+scikit-learn
+pandas
+numpy
+joblib
+imbalanced-learn
+mlflow
+pytest
+streamlit
+xgboost==2.0.3
+httpx>=0.24

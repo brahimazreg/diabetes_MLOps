@@ -1,0 +1,27 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.jsonl
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Models
+models/*.joblib
+
+# Streamlit
+.streamlit/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Data (if dataset should NOT be tracked)
+data/raw/
+*.csv
