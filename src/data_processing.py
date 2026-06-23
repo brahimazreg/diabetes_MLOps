@@ -32,9 +32,9 @@ def get_train_test_data():
 
 
 
-if __name__=='__main__':
+""" if __name__=='__main__':
     df =load_data()
     x, y = buil_features(df)
     print(x.head(3))
     print(y.head(5))
-
+ """

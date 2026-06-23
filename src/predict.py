@@ -12,10 +12,6 @@ def predict(df):
     return model.predict(df)
 
 
-if __name__=='__main__':
-    df=load_data()
-    print(predict(df.head()))
-
 
 
 
