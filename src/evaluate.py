@@ -3,12 +3,12 @@ from src.data_processing import *
 from sklearn.metrics import recall_score ,roc_auc_score,f1_score,accuracy_score
 
 
-X_train,X_test,Y_train,Y_test=get_train_test_data()
+
  
 
 
 def evaluate(model,threshold=0.5):   
-
+    X_train,X_test,Y_train,Y_test=get_train_test_data()
     proba = model.predict_proba(X_test)[:, 1]
     Y_pred = (proba > threshold).astype(int)
 
