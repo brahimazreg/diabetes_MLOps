@@ -30,9 +30,15 @@ def health():
 @app.post("/predict")
 def make_prediction(data: DiabetesInput):
     df = pd.DataFrame([data.model_dump()])
-    pred = predict(df)
+    prediction, probability = predict(df)
 
-    return {"prediction": int(pred[0])}
+    return {
+        "prediction": int(prediction),
+        "probability": float(probability),
+        "model_version": "v1.0"
+    }   
+
+
 
 @app.get("/sample")
 def get_sample_input():

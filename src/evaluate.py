@@ -1,6 +1,5 @@
-from src.config import MODEL_PATH
+
 from src.data_processing import *
-from joblib import load
 from sklearn.metrics import recall_score ,roc_auc_score,f1_score,accuracy_score
 
 
@@ -8,11 +7,10 @@ X_train,X_test,Y_train,Y_test=get_train_test_data()
  
 
 
-def evaluate(model):
-    # model = load(DEFAULT_MODEL)
+def evaluate(model,threshold=0.5):   
 
-    Y_pred =model.predict(X_test)
-    proba=model.predict_proba(X_test)[:,1]
+    proba = model.predict_proba(X_test)[:, 1]
+    Y_pred = (proba > threshold).astype(int)
 
     accuracy=accuracy_score(Y_test,Y_pred)
     recall =recall_score(Y_test,Y_pred)

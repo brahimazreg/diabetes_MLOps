@@ -4,6 +4,10 @@ from src.predict import predict
 
 def test_predic():
     df=sample_input()
-    output =predict(df)
-    assert output is not None
-    assert set(output).issubset({0, 1})
+    prediction, probability = predict(df)   
+
+    assert prediction in [0, 1]
+    assert 0.0 <= probability <= 1.0
+
+    
+    

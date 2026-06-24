@@ -1,31 +1,35 @@
-# 🩺 Diabetes Prediction MLOps Project
+# 🧠 Diabetes Prediction MLOps Project
 
-This project is an end-to-end **Machine Learning system** for diabetes prediction using **Logistic Regression**, wrapped in a production-style MLOps pipeline.
-
-It includes:
-
-* Data preprocessing
-* Model training pipeline
-* Evaluation metrics
-* MLflow experiment tracking
-* FastAPI inference service
-* Docker containerization
-* Unit testing
-* CI-ready structure
+An end-to-end **Machine Learning Operations (MLOps)** project for diabetes prediction using FastAPI, MLflow, Docker, CI/CD, and Streamlit monitoring dashboard.
 
 ---
 
-# 🚀 Features
+## 🚀 Project Overview
 
-* 📊 Machine Learning model (Logistic Regression)
-* 🔄 Full preprocessing pipeline (scaling, feature handling)
-* 🧪 Model evaluation (accuracy, recall, F1-score, ROC AUC)
-* 📦 Model persistence with Joblib
-* 🌐 REST API with FastAPI
-* 📈 Experiment tracking with MLflow
-* 🐳 Docker support
-* ✅ Pytest unit tests
-* ⚙️ CI/CD ready (GitHub Actions)
+This project demonstrates a full MLOps pipeline:
+
+- Data preprocessing & feature engineering
+- Model training (Logistic Regression)
+- Experiment tracking with MLflow
+- REST API deployment using FastAPI
+- Docker containerization
+- Automated testing with Pytest
+- Model monitoring using logging + Streamlit dashboard
+
+---
+
+## 📊 ML Problem
+
+Predict whether a patient has diabetes based on medical features:
+
+- Pregnancies
+- Glucose
+- Blood Pressure
+- Skin Thickness
+- Insulin
+- BMI
+- Diabetes Pedigree Function
+- Age
 
 ---
 
@@ -61,7 +65,40 @@ diabetes_MLOps/
 
 ---
 
-# ⚙️ Setup Instructions
+
+---
+
+## ⚙️ Tech Stack
+
+- Python
+- Scikit-learn
+- FastAPI
+- Streamlit
+- MLflow
+- Docker
+- Pytest
+- Pandas / NumPy
+
+---
+
+## 🧪 Model Training
+
+- Algorithm: Logistic Regression
+- Pipeline: Scikit-learn Pipeline (Preprocessing + Model)
+- Evaluation metrics:
+  - Accuracy
+  - Recall
+  - F1-score
+  - ROC-AUC
+
+- Experiment tracking:
+  - MLflow logs parameters, metrics, and models
+
+---
+
+## 📡 API (FastAPI)
+    https://diabetes-mlops-rsds.onrender.com/docs
+
 
 ## 1. Clone repository
 
@@ -209,7 +246,7 @@ The model expects:
 ---
 
 # 👨‍💻 Author
-
+Brahim Azreg 
 Built as a learning project for MLOps fundamentals:
 
 * ML pipeline design
