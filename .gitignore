@@ -22,6 +22,3 @@ mlflow.db
 .idea/
 .DS_Store
 
-# Data (if dataset should NOT be tracked)
-data/raw/
-*.csv
